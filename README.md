@@ -30,7 +30,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/skkuhg/CodeBuddy.git
+   git clone https://github.com/skkuhg/CodeBuddy-Mobile.git
    cd CodeBuddy
    ```
 
