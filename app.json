@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "CodeBuddy Full",
+    "slug": "codebuddy-full",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "CodeBuddy needs camera access to capture code images for OCR analysis.",
+        "NSPhotoLibraryUsageDescription": "CodeBuddy needs photo library access to select code images for analysis."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow CodeBuddy to access your camera to capture code images for OCR analysis."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow CodeBuddy to access your photos to select code images for analysis."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow CodeBuddy to access your photos to select code images for analysis.",
+          "savePhotosPermission": "Allow CodeBuddy to save processed images to your photo library."
+        }
+      ]
+    ]
+  }
+}
